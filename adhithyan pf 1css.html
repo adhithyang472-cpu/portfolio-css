@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adhithyan G — Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f7f8fa;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #2c3e50;
+      color: #fff;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #cfd8e3;
+    }
+
+    nav {
+      margin-top: 18px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+      padding: 6px 12px;
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 4px;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      background: #fff;
+      color: #2c3e50;
+    }
+
+    section {
+      background: #fff;
+      padding: 25px 30px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 3px solid #2c3e50;
+      display: inline-block;
+      padding-bottom: 4px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      color: #34495e;
+      margin: 12px 0 8px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    #skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    #skills li {
+      background: #2c3e50;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    #project ul li {
+      padding-left: 20px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+
+    #project ul li::before {
+      content: "•";
+      color: #2c3e50;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #2c3e50;
+      color: #fff;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+
+    #contact ul li {
+      margin-bottom: 8px;
+    }
+
+    #contact a {
+      color: #2c3e50;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6rem; }
+      nav a { display: inline-block; margin: 4px; }
+      section { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Adhithyan G</h1>
+      <p>Electronics &amp; Instrumentation Engineer</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Project</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am Adhithyan G, a dedicated Electronics and Instrumentation Engineering graduate
+        from the Federal Institute of Science and Technology (FISAT), Ernakulam.
+      </p>
+      <p>
+        I have a strong interest in control systems, instrumentation, and embedded technologies,
+        with a solid foundation in electronic circuits, sensors, and measurement systems.
+        I am passionate about learning new technologies and applying theoretical knowledge
+        to practical applications.
+      </p>
+      <p>
+        My goal is to build a successful career in automation, industrial instrumentation,
+        and smart control systems.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>C Programming</li>
+        <li>Python</li>
+        <li>Arduino Basics</li>
+        <li>Digital Electronics</li>
+        <li>Basic Electrical Circuits</li>
+        <li>Sensor Interfacing</li>
+        <li>ESP32 / IoT</li>
+        <li>Embedded Systems</li>
+        <li>Control Systems</li>
+      </ul>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="project">
+      <h2>Project</h2>
+      <h3>Smart Energy-Efficient Ceiling Fan Using Temperature and Humidity Sensor</h3>
+      <p><strong>Category:</strong> IoT &amp; Embedded Systems</p>
+      <p>
+        Designed and developed an automated ceiling fan control system using a DHT22
+        temperature and humidity sensor and an ESP32 microcontroller. The system monitors
+        room conditions in real time and automatically adjusts fan speed to maintain comfort
+        while reducing unnecessary energy consumption.
+      </p>
+      <p><strong>Key highlights:</strong></p>
+      <ul>
+        <li>Real-time temperature and humidity monitoring via DHT22 sensor</li>
+        <li>Automatic fan speed adjustment using PWM control</li>
+        <li>Sensor interfacing and hardware integration on ESP32</li>
+        <li>Energy-efficient operation through intelligent automation</li>
+      </ul>
+      <p><strong>Technologies used:</strong> ESP32, DHT22, C / Arduino IDE, Sensor Interfacing, PWM Control</p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>GPA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2021 – 2025</td>
+            <td>B.Tech in Electronics &amp; Instrumentation Engineering</td>
+            <td>
+              Federal Institute of Science and Technology (FISAT), Angamaly, Kerala
+              <iframe
+                src="https://maps.google.com/maps?q=Federal+Institute+of+Science+and+Technology+FISAT+Angamaly+Kerala&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </td>
+            <td>9.55 / 10</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>I am open to opportunities in automation, industrial instrumentation, and embedded systems.</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:adhithyang472@gmail.com">adhithyang472@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:9400535944">+91 94005 35944</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/adhithyan-g-82088138a" target="_blank">linkedin.com/in/adhithyan-g-82088138a</a></li>
+        <li><strong>Location:</strong> Kollengode, Palakkad, Kerala</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Adhithyan G &mdash; Electronics &amp; Instrumentation Engineer</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
